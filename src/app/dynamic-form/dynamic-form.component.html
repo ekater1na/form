@@ -1,0 +1,10 @@
+<div class="container">
+  <form action="" (ngSubmit)="onSubmit()" [formGroup]="form">
+
+    <div class="form-group" *ngFor="let element of elements">
+      <app-dynamic-form-element [element]="element" [form]="form"></app-dynamic-form-element>
+    </div>
+
+    <input type="submit" class="btn btn-default" value="Save">
+  </form>
+</div>
